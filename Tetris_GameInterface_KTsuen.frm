@@ -444,11 +444,11 @@ Private Sub picGrid_KeyDown(KeyCode As Integer, Shift As Integer)
                         HTranslatePiece GameGrid(), ActivePiece, KeyCode, DrawingConstants
                     End If
                 Case vbKeyUp
-                    If Not NewPiece Then
+                    'If Not NewPiece Then
                         If ActivePiece.PShape <> PieceConstants.O Then
                             RotatePiece GameGrid(), ActivePiece, DrawingConstants, PieceConstants
                         End If
-                    End If
+                    'End If
                 Case vbKeyDown
                     If Not NewPiece Then
                         Speed = 0.01
